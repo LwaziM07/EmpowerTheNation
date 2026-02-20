@@ -1,0 +1,192 @@
+/* (The IIE, 2024) */
+.parent-container {
+    width: 100%; /* (The IIE, 2024) */
+    display: flex; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+    justify-content: center;    /* (The IIE, 2024) */
+    margin-bottom: 30px; /* (The IIE, 2024) */
+    background-color: #54C392; /* (The IIE, 2024) */
+    padding: 30px 0px 30px 0px; /* (The IIE, 2024) */
+    border-radius: 30px 30px 0px 0px; /* (The IIE, 2024) */
+}
+
+.form-container {
+    display: flex; flex-direction: row; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+    width: 60%;
+}
+
+.input-container, .textarea-container {
+    width: 100%;
+}
+
+.textarea-style {
+    height: 275px;
+    width: 450px;
+    margin-left: 20px;
+    border-radius: 0px 8px 8px 0px; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+    font-family: "Josefin Sans", sans-serif; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+    font-size: 16px; /* (The IIE, 2024) */
+    padding: 5px;
+    resize: none; /* This line of code disables resizing */ /* (W3Schools, 2024) */
+    border: none; /* (The IIE, 2024) */
+}
+
+.input-items {
+    display: flex; flex-direction: column; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+}
+
+.input-style {
+    margin: 0px 20px 10px 0px; /* (The IIE, 2024) */
+    height: 50px;
+    font-family: "Josefin Sans", sans-serif; /* (The IIE, 2024) */
+    font-size: 16px;
+    padding-left: 5px; /* (The IIE, 2024) */
+    border: none;
+}
+
+.form-name {
+    border-radius: 8px 0px 0px 0px;
+    border: none;
+}
+
+.form-number {
+    border-radius: 0px 0px 0px 8px;
+    border: none; /* (The IIE, 2024) */
+}
+
+.form-btn {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+}
+
+/* Completely removes all code between these tags until other instructions/conditions are given */
+.form-btn-responsive {
+    display: none; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+}
+
+.form-btn-style {
+    height: 70px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* (CSS Scan, 2024) */
+    font-size: 28px;
+    font-family: "Josefin Sans", sans-serif; /* (The IIE, 2024) */
+    font-weight: 600;
+    cursor: pointer; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+    margin-top: 20px;
+    transition: 0.5s; /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+}
+
+/* Buttons get bigger when cursor hovers over them */
+.form-btn-style:hover {
+    height: 75px;
+    width: 145px;
+}
+
+.maps-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.maps-style {
+    border-radius: 13px;
+    height: 200px;
+    width: 350px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; /* (CSS Scan, 2024) */
+}
+
+.first-location-container, .second-location-container, .third-location-container {
+    text-align: center; /* (The IIE, 2024) */
+    width: 350px;
+    padding-bottom: 30px;
+}
+
+/* span is styled inside p element and given its own special line */
+.address-text {
+    color: #1A5319;
+    border-bottom: solid 1px #1A5319;
+    font-weight: 600;
+}
+
+.maps-address {
+    color: #1A5319;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* This code only happens when screen is small / mobile size */
+@media screen and (max-width: 960px) {  /* (The IIE, 2024) */
+    .form-container {
+      flex-direction: column;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+
+    .textarea-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textarea-style {
+        height: 225px;
+        margin-left: 0px;
+        width: 328px;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .input-style {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .form-name {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .form-number {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    /* Everything between these tags are removed until other conditions are met */
+    .form-btn {
+        display: none;
+    }
+
+    .form-btn-responsive {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-btn-style:hover {
+        height: 70px;
+        width: 140px;
+    }
+
+    .maps-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-location-container, .second-location-container { /* (HTML & CSS Full Course - Beginner to Pro, 2022) */
+        margin-bottom: 80px;
+    }
+}
+
+
+/* References
+
+W3Schools. 2024. How to Disable Resizing of Text Area. [Online]. Available at: https://www.w3schools.com/howto/howto_css_disable_resize_textarea.asp [Accessed 16 October 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+
+HTML & CSS Full Course - Beginner to Pro. 2022. YouTube video, added by SuperSimpleDev. [Online]. Available at: https://www.youtube.com/watch?v=G3e-cpL7ofc [Accessed 2 August 2024].
+
+*/

@@ -1,0 +1,274 @@
+<!-- (The IIE, 2024) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The IIE (2024), demonstrates how to implement fonts and stylesheets -->
+    <!-- (Google Fonts, 2024) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font-family: "Josefin Sans", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/headerStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/indivCoursesStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/bottomNavStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/bottomNavStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/footerStyle.css">
+
+    <title>First Aid</title>
+</head>
+    <body>
+        <!-- Links to navigate to other pages. -->
+        <header class="header-container"> <!-- (W3Schools, 2024) -->
+            <div class="header-img"> <!-- (The IIE, 2024) -->
+                <a href="home.html"> <!-- (The IIE, 2024) -->
+                    <img class="img-header-radius" src="images/logo.png" width="120px" height="120px" alt="logo"> <!-- Figure 1:(Canvas,2012)-->
+                </a>
+            </div>
+
+            <div class="header-links">
+                <a href="home.html" class="header-links-style">
+                    <button class="header-links-text">Home</button> <!-- (The IIE, 2024) -->
+                </a>
+
+                <span style="font-size: 32px; color: white;"><i>/</i></span> 
+
+                <!-- W3Schools (2024), demonstrates how to implement a dropdown list -->
+                <!-- The IIE (2024), demonstrates how to implement inline CSS -->
+                <div style="z-index: 1;"> <!-- Let the dropdown menu overlap other content. -->
+                    <div>
+                        <div class="header-links">
+                            <!-- W3Schools (2024), demonstrates how to give buttons functionality -->
+                            <button onclick="dropdownFunction()" class="course-btn-style header-links-style">Courses</button> <!-- (HTML Arrows, 2023) -->
+                        </div>
+                
+                        <div id="dropdown-items" class="dropdown-content">
+                            <a class="dropdown-links" href="coursesSixWeeks.html">Six - Week Courses</a>
+                            <a class="dropdown-links" style="border-bottom: none;" href="coursesSixMonths.html">Six - Months Courses</a>
+                        </div>
+                    </div>
+                </div>
+
+                <span style="font-size: 32px; color: white;"><i>/</i></span> 
+
+                <a href="fees.html" class="header-links-style">
+                    <button class="header-links-text">Fees</button>
+                </a>
+
+                <span style="font-size: 32px; color: white;"><i>/</i></span> 
+
+                <a href="contactAndFindUs.html" class="header-links-style">
+                    <button class="header-links-text">Contact & Find Us</button>
+                </a>
+            </div>
+
+            <!-- Dropdown will display if screen size is at mobile view -->
+            <!-- W3Schools (2024), demonstrates how to implement a dropdown list -->
+            <div class="align-dropdown" >
+                <div class="dropdown-container">
+                    <div class="align-btn">
+                        <button onclick="dropdownFunctionResponsive()" class="drop-btn-responsive">&#9776;</button> <!-- (HTML Arrows, 2023) -->
+                    </div>
+            
+                    <div id="dropdown-items-responsive" class="dropdown-content-responsive">
+                        <a class="dropdown-links-responsive" href="home.html">Home</a>
+                        <a class="dropdown-links-responsive" href="coursesSixWeeks.html">Six-Week Courses</a>
+                        <a class="dropdown-links-responsive" href="coursesSixMonths.html">Six-Months Courses</a>
+                        <a class="dropdown-links-responsive" href="fees.html">Fees</a>
+                        <a class="dropdown-links-responsive" style="border-bottom: none;" href="contactAndFindUs.html">Contact & Find Us</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Individual course content and apply. --> 
+        <main class="main-layout"> <!-- (W3Schools, 2024) -->
+            <h1 class="page-title">First Aid</h1> <!-- (The IIE, 2024) -->
+
+            <div class="main-grid-container">
+                <div class="grid-img">
+                    <img class="main-img-style" src="images/demonstration-class.jpg" height="450px" width="300px" alt="students demonstrating on teacher"> <!-- Figure 22:(Freepik, 2024) -->
+                </div>
+
+                <div class="grid-course-description">
+                    <h2 style="margin-top: 0;">Course Description:</h2> <!-- (The IIE, 2024) -->
+                    <p style="margin-top: 0;">To provide first aid awareness and basic life support.</p> <!-- (The IIE, 2024) -->
+                </div>
+
+                <div class="grid-location">
+                    <h2 style="margin-top: 0;">Campus Location:</h2>
+                    <p style="margin-top: 0;">179 Jan Smuts Ave, Parktown North, Randburg, 2193</p>
+                </div>
+
+                <div class="grid-learn-description">
+                    <h2>Learn Description:</h2>
+                    <ul class="align-descr-ul"> <!-- (The IIE, 2024) -->
+                        <li class="align-descr-li">Wounds and bleeding.</li> <!-- (The IIE, 2024) -->
+                        <li class="align-descr-li">Burns and fractures.</li>
+                        <li class="align-descr-li">Emergency scene management.</li>
+                        <li class="align-descr-li">Cardio-Pulmonary Resuscitation (CPR).</li>
+                        <li class="align-descr-li">Respiratory distress e.g., Choking, blocked airway.</li>
+                    </ul>
+                </div>
+
+                <div class="grid-requirement">
+                    <h2>Requirements:</h2>
+                    <ul class="align-descr-ul">
+                        <li class="align-descr-li">No Matric certificate needed.</li>
+                        <li class="align-descr-li">Age: 16 and older.</li>
+                    </ul>
+                </div>
+
+                <div class="grid-fees-apply-back">
+                    <div class="fees-style">
+                        <h2 style="margin: 0;">Fees:</h2>
+                        <br>
+                        <p style="margin-top: 0; font-size: 50px;">R1500</p>
+                    </div>
+
+                    <div class="apply-back-btn-layout">
+                        <a href="fees.html">
+                            <!-- This will direct the user to the Fees page and the course will be clicked -->
+                            <button onclick= "applyForCourse('checkedFirstAid')" class="apply-back-btn-style">Apply</button>
+                        </a>
+                        <a href="coursesSixMonths.html">
+                            <button class="apply-back-btn-style">Back</button>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom navigator for when the screen is on mobile view. -->
+        <nav class="nav-container"> <!-- (W3Schools, 2024) -->
+            <!-- Thompson (2013), demonstrates how to move from one page to another through a button -->
+            <button type="button" class="nav-btn" onclick="location.href = 'home.html'">
+                <div class="nav-item">
+                    <img id="homeIcon" src="images/icons/home-page-icon.png" height="40px" width="40px" alt="Home icon"><!--Figure 5:(Flaticon,2024)-->
+                </div>
+            </button>
+                
+            <button class="nav-btn" onclick="location.href = 'coursesSixWeeks.html'">
+                <div class="nav-item">
+                    <img id="sixWeeksIcon" src="images/icons/six-weeks.png" height="40px" width="40px" alt="6 weeks courses icon"><!--Figure 6:(Canva, 2012)-->
+                </div>
+            </button>
+    
+            <button class="nav-btn" onclick="location.href = 'coursesSixMonths.html'">
+                <div class="nav-item">
+                    <img id="sixMonthsIcon" src="images/icons/six-months.png" height="40px" width="40px" alt="6 months courses icon"><!--Figure 7:(Canva, 2012)-->
+                </div>
+            </button>
+    
+            <button class="nav-btn" onclick="location.href = 'fees.html'">
+                <div class="nav-item">
+                    <img id="feesIcon" src="images/icons/fees-page-icon.png" height="40px" width="40px" alt="Fees icon"><!--Figure 8:(Flaticon,2024)-->
+                </div>
+            </button>
+    
+            <button class="nav-btn" onclick="location.href = 'contactAndFindUs.html'">
+                <div class="nav-item">
+                    <img id="contactUsIcon" src="images/icons/contact-us.png" height="40px" width="40px" alt="Contact & find us icon"><!--Figure 9:(Flaticon,2024)-->
+                </div>
+            </button>
+        </nav> 
+
+        <!-- Footer content -->
+        <footer id="footer-container"> <!-- (W3Schools, 2024) -->
+            <div id="footer-img">
+                <a href="home.html">
+                    <img style="border-radius: 15px 15px 15px 0px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" src="images/logo.png" width="100px" height="100px" alt="logo"> <!-- (CSS Scan, 2024; The IIE 2024) -->
+                <!-- Figure 1:(Canvas,2012)-->
+                </a>
+            </div>
+
+            <div id="footer-grid">
+                <div id="footer-grid-item-1">
+                    <span>
+                        <!-- The IIE (2024), demonstrates how to implement and display the last motified date. -->
+                        <script>
+                            let theDate = new Date();
+                            document.write("&copy; " + theDate.getFullYear());
+                            document.write(" All rights reserved - Empowering The Nation | Last modified: ");
+                            let theModifiedDate = new Date(document.lastModified);
+                            document.write (theModifiedDate.toDateString());
+                        </script>
+                    </span>
+                </div>
+                <div id="footer-grid-item-2">
+                    <span>Powered by NGP</span> <!-- (The IIE, 2024) -->
+                </div>
+                <div id="footer-grid-item-3">
+                    <span>Email Address: <a href="mailto:etn2018@gmail.com" class="footer-link-style">etn2018@gmail.com</a></span>
+                </div>
+                <div id="footer-grid-item-4">
+                    <span>HQ Address: <a href="https://maps.app.goo.gl/zCVpwfwE5BuymCrP9" class="footer-link-style" target="_blank">35 Siemert Rd, Doornfontein, Johannesburg, 2094</a></span>
+                </div>
+                <div id="footer-grid-item-5">
+                    <span>Telephone: 0611704555</span>
+                </div>
+                <div id="footer-grid-item-6">
+                    <a href="https://www.facebook.com/" target="_blank"> <!-- (The IIE, 2024) -->
+                        <img class="footer-image-hover" src="images/facebook.png" style="padding-right: 7px; transition: 0.5s;" height="50px" width="50px" alt="Facebook logo"><!--Figure 10:(Flaticon, 2024)-->
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="footer-image-hover" src="images/instagram.png" style="padding-left: 7px; transition: 0.5s;" height="50px" width="50px" alt="Instagram logo"><!--Figure 11:(Flaticon, 2024)-->
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- The IIE (2024), demonstrates how to implement JS scripts -->
+        <script src="js/headerScript.js"></script>
+        <script src="js/indivCoursesApply.js"></script>
+
+        <script>
+            // W3Schools (2024), demonstrates how to use the filter attribute
+            homeIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+            sixWeeksIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+            sixMonthsIcon.style.filter = "brightness(0) saturate(100%) invert(32%) sepia(13%) saturate(3854%) hue-rotate(118deg) brightness(97%) contrast(87%)"; // (css-color-filter-generator, N/A)
+            feesIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+            contactUsIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+        </script>      
+    </body>
+</html>
+
+<!--
+Reference List:
+
+css-color-filter-generator. N/A. [Online]. Available at: https://angel-rs.github.io/css-color-filter-generator/ [Accessed 16 October 2024].
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 06 October 2024].
+
+Flaticon.2024.Facebook free icon, 2024.[Online].Available at:https://www.flaticon.com/free-icon/facebook_733547?term=facebook&page=1&position=3&origin=search&related_id=733547
+
+Flaticon.2024.Instagram free icon, 2024.[Online].Available at:https://www.flaticon.com/free-icon/instagram_2111463?term=instagram&page=1&position=4&origin=search&related_id=2111463
+
+Flaticon. 2024. Search Result for Contact - Flaticon. [Online]. Available at: https://www.flaticon.com/free-icon/contact-us_7269995?term=contact&page=1&position=4&origin=search&related_id=7269995 [Accessed 16 October 2024]
+
+Flaticon. 2024. Search Result for Fees - Flaticon. [Online]. Available at: https://www.flaticon.com/search?word=fees&color=black [Accessed 16 October 2024]
+
+Flaticon. 2024. Search Results for Solid Home. [Online]. Available at: https://www.flaticon.com/search?word=solid%20home [Accessed 16 October 2024]
+
+Freepik.2024.People are practicing medicine,2024.[Online]. Available at: https://www.freepik.com/free-photo/people-are-practicing-medicine_11191563.htm#fromView=search&page=1&position=18&uuid=2b4ed00a-c8ed-4eab-be33-d8b30fe0f640 [Accessed 19 August 2024].
+
+Google Fonts. 2024. [Online]. Available at: https://fonts.google.com/ [Accessed 28 September 2024].
+
+HTML Arrows. 2023. HTML Arrow Symbol, Arrow Entity and ASCII Arrow Character Code Reference. [Online]. Available at: https://www.toptal.com/designers/htmlarrows/arrows/ [Accessed 06 October 2024].
+
+Mathew Thompson. 2013. How can I make a button redirect my page to another page? [duplicate]. [Source Code]. https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page [Accessed 14 October 2024].
+
+Melanie Perkins, Cameron Adams, Cliff Obrecht. 2012. Canva. [App]. Available at: https://www.canva.com/ (Accessed 31 July 2024)
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+
+W3Schools. 2024. CSS filter Property. [Online]. Available at: https://www.w3schools.com/cssref/css3_pr_filter.php [Accessed 16 October 2024].
+
+W3Schools. 2024. How TO - Clickable Dropdown. [Online]. Available at: https://www.w3schools.com/howto/howto_js_dropdown.asp [Accessed 06 October 2024].
+
+W3Schools. 2024. HTML Semantic Elements. [Online]. Available at: https://www.w3schools.com/html/html5_semantic_elements.asp [Accessed 5 October 2024].
+
+Reference Image here
+-->

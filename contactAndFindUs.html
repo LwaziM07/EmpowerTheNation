@@ -1,0 +1,298 @@
+<!-- (The IIE, 2024) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The IIE (2024), demonstrates how to implement fonts and stylesheets -->
+  <!-- (Google Fonts, 2024) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font-family: "Josefin Sans", sans-serif; -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/headerStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/bottomNavStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/footerStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/contactAndFindUsStyle.css">
+
+  <title>Contact & Find Us</title>
+</head>
+  <body>
+    <!-- Links to navigate to other pages. -->
+    <header class="header-container"> <!-- (W3Schools, 2024) -->
+      <div class="header-img"> <!-- (The IIE, 2024) -->
+          <a href="home.html"> <!-- (The IIE, 2024) -->
+              <img class="img-header-radius" src="images/logo.png" width="120px" height="120px" alt="logo"> <!--(Canvas,2012)-->
+          </a>
+      </div>
+
+      <div class="header-links">
+          <a href="home.html" class="header-links-style">
+              <button class="header-links-text">Home</button>
+          </a>
+
+          <span style="font-size: 32px; color: white;"><i>/</i></span> <!-- (The IIE, 2024) -->
+
+          <!-- W3Schools (2024), demonstrates how to implement a dropdown list -->
+          <div style="z-index: 1;">
+              <div>
+                  <div class="header-links">
+                      <button onclick="dropdownFunction()" class="course-btn-style header-links-style">Courses</button> <!-- (HTML Arrows, 2023) -->
+                  </div>
+          
+                  <div id="dropdown-items" class="dropdown-content">
+                      <a class="dropdown-links" href="coursesSixWeeks.html">Six - Week Courses</a>
+                      <a class="dropdown-links" style="border-bottom: none;" href="coursesSixMonths.html">Six - Months Courses</a>
+                  </div>
+              </div>
+          </div>
+
+          <span style="font-size: 32px; color: white;"><i>/</i></span> 
+
+          <a href="fees.html" class="header-links-style">
+              <button class="header-links-text">Fees</button> <!-- (The IIE, 2024) -->
+          </a>
+
+          <span style="font-size: 32px; color: white;"><i>/</i></span>
+
+          <a href="contactAndFindUs.html" class="header-links-style">
+              <button class="header-links-text">Contact & Find Us</button>
+          </a>
+      </div>
+
+      <!-- Dropdown will display if screen size is at mobile view -->
+      <!-- W3Schools (2024), demonstrates how to implement a dropdown list -->
+      <div class="align-dropdown" >
+        <div class="dropdown-container">
+          <div class="align-btn">
+            <button onclick="dropdownFunctionResponsive()" class="drop-btn-responsive">&#9776;</button> <!-- (HTML Arrows, 2023) -->
+          </div>
+            
+          <div id="dropdown-items-responsive" class="dropdown-content-responsive">
+            <a class="dropdown-links-responsive" href="home.html">Home</a>
+            <a class="dropdown-links-responsive" href="coursesSixWeeks.html">Six-Week Courses</a>
+            <a class="dropdown-links-responsive" href="coursesSixMonths.html">Six-Months Courses</a>
+            <a class="dropdown-links-responsive" href="fees.html">Fees</a>
+            <a class="dropdown-links-responsive" style="border-bottom: none;" href="contactAndFindUs.html">Contact & Find Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-layout"> <!-- (W3Schools, 2024) -->
+      <h1 class="page-title">Send us a message</h1> <!-- (The IIE, 2024) -->
+
+      <!-- Section of the code where a form will be implemented-->
+      <div class="parent-container"> <!-- (HTML & CSS Full Course - Beginner to Pro, 2022) -->
+        <form class="form-container" id="form" action="mailto:etn2018@gmail.com" method="post" enctype="text/plain" name="form" onsubmit="validateEmail()"> <!-- (The IIE, 2024) -->
+          <div class="input-container">
+            <div class="input-items">
+              <input class="input-style form-name" type="text" placeholder="Full Name" required>  <!-- (The IIE, 2024) -->
+              <input class="input-style" id="email" type="email" placeholder="Email" required>  <!-- (The IIE, 2024) -->
+              <!-- GeeksforGeeks (2023), demonstartes how to implement error handling if the user does not input a phone number. -->
+              <input class="input-style form-number" type="text" placeholder="Phone Number (Optional)" pattern="\d{10}" autocomplete="off" title="Phone number that requires 10 digits">  <!-- (The IIE, 2024) -->
+            </div>
+
+            <div class="form-btn">
+              <input class="form-btn-style" type="submit" placeholder="Send">  <!-- (The IIE, 2024) -->
+              <input class="form-btn-style" type="reset" placeholder="Clear">  <!-- (The IIE, 2024) -->
+            </div>
+          </div>
+
+          <div class="textarea-container">
+            <textarea class="textarea-style" placeholder="Type here..." required></textarea> <!-- (The IIE, 2024) -->
+          </div>
+
+          <div class="form-btn-responsive">
+            <input class="form-btn-style" type="submit" placeholder="Send">
+            <input class="form-btn-style" type="reset" placeholder="Clear">
+          </div>
+        </form>
+      </div>
+
+      <!-- This is the container where all the maps and addresses will be -->
+      <div class="maps-container">
+        <div class="first-location-container">
+          <iframe class="maps-style" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.9286971524234!2d28.05319307427765!3d-26.198997663759886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e831cf73645%3A0x48f68e4d673885ea!2s35%20Siemert%20Rd%2C%20Doornfontein%2C%20Johannesburg%2C%202028!5e0!3m2!1sen!2sza!4v1726076634401!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- (Google, 2024) -->
+          <br>
+          <p class="maps-address">  <!-- span used to style text "Address" seperate from other text -->
+            <span class="address-text">Address:</span>  <!-- (HTML & CSS Full Course - Beginner to Pro, 2022) -->
+            <br>
+            <br>
+            35 Siemert Rd, Doornfontein, Johannesburg, 2094
+          </p>
+        </div>
+        <div class="second-location-container">
+          <iframe class="maps-style" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.5213486567436!2d28.032295074275247!3d-26.147145261650536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c8e1700a92d%3A0x1764719ed5c323e2!2s179%20Jan%20Smuts%20Ave%2C%20Parktown%20North%2C%20Randburg%2C%202193!5e0!3m2!1sen!2sza!4v1726076588979!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- (Google, 2024) -->
+          <br>
+          <p class="maps-address">
+            <span class="address-text">Address:</span>
+            <br>
+            <br>
+            179 Jan Smuts Ave, Parktown North, Randburg, 2193
+          </p>
+        </div>
+        <div class="third-location-container">
+          <iframe class="maps-style" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14314.733927914947!2d28.00647653763717!3d-26.2394721444319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95093aab452845%3A0x93a609f531a97e0d!2s107%20Northern%20Parkway%20Rd%2C%20Ormonde%2C%20Johannesburg%20South%2C%202091!5e0!3m2!1sen!2sza!4v1726076531355!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- (Google, 2024) -->
+          <br>
+          <p class="maps-address">
+            <span class="address-text">Address:</span>
+            <br>
+            <br>
+            107 Northern Parkway Rd, Ormonde, Johannesburg South, 2091
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom navigator for when the screen is on mobile view. -->
+    <nav class="nav-container"> <!-- (W3Schools, 2024) -->
+      <!-- Thompson (2013), demonstrates how to move from one page to another through a button -->
+      <button type="button" class="nav-btn" onclick="location.href = 'home.html'">
+        <div class="nav-item">
+          <img id="homeIcon" src="images/icons/home-page-icon.png" height="40px" width="40px" alt="Home icon"><!--Figure 5:(Flaticon, 2024)-->
+        </div>
+      </button>
+          
+      <button class="nav-btn" onclick="location.href = 'coursesSixWeeks.html'">
+        <div class="nav-item">
+          <img id="sixWeeksIcon" src="images/icons/six-weeks.png" height="40px" width="40px" alt="6 weeks courses icon"><!--Figure 6:(Canva, 2012)-->
+        </div>
+      </button>
+
+      <button class="nav-btn" onclick="location.href = 'coursesSixMonths.html'">
+        <div class="nav-item">
+          <img id="sixMonthsIcon" src="images/icons/six-months.png" height="40px" width="40px" alt="6 months courses icon"><!--Figure 7:(Canva, 2012)-->
+        </div>
+      </button>
+
+      <button class="nav-btn" onclick="location.href = 'fees.html'">
+        <div class="nav-item">
+          <img id="feesIcon" src="images/icons/fees-page-icon.png" height="40px" width="40px" alt="Fees icon"><!--Figure 8:(Flaticon, 2024)-->
+        </div>
+      </button>
+
+      <button class="nav-btn" onclick="location.href = 'contactAndFindUs.html'">
+        <div class="nav-item">
+          <img id="contactUsIcon" src="images/icons/contact-us.png" height="40px" width="40px" alt="Contact & find us icon"><!--Figure 9:(Flaticon, 2024)-->
+        </div>
+      </button>
+    </nav>  
+
+    <footer id="footer-container-responsive"> <!-- (W3Schools, 2024) -->
+      <div id="footer-img">
+          <a href="home.html">
+              <img style="border-radius: 15px 15px 15px 0px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" src="images/logo.png" width="100px" height="100px" alt="logo"> <!-- Figure 1:(Canvas, 2012)-->
+          </a>
+      </div>
+
+      <div id="footer-grid">
+          <div id="footer-grid-item-1">
+              <span>
+                <!-- The IIE (2024), demonstrates how to implement and display the last motified date. -->
+                <script>
+                    let theDate = new Date();
+                    document.write("&copy; " + theDate.getFullYear());
+                    document.write(" All rights reserved - Empowering The Nation | Last modified: ");
+                    let theModifiedDate = new Date(document.lastModified);
+                    document.write (theModifiedDate.toDateString());
+                </script>
+              </span>
+          </div>
+          <div id="footer-grid-item-2">
+              <span>Powered by NGP</span> <!-- (The IIE, 2024) -->
+          </div>
+          <div id="footer-grid-item-3">
+              <span>Email Address: <a href="mailto:etn2018@gmail.com" class="footer-link-style">etn2018@gmail.com</a></span>
+          </div>
+          <div id="footer-grid-item-4">
+              <span>HQ Address: <a href="https://maps.app.goo.gl/zCVpwfwE5BuymCrP9" class="footer-link-style" target="_blank">35 Siemert Rd, Doornfontein, Johannesburg, 2094</a></span>
+          </div>
+          <div id="footer-grid-item-5">
+              <span>Telephone: 0611704555</span>
+          </div>
+          <div id="footer-grid-item-6">
+              <a href="https://www.facebook.com/" target="_blank">
+                  <img class="footer-image-hover" src="images/facebook.png" style="padding-right: 7px; transition: 0.5s;" height="50px" width="50px" alt="Facebook logo"><!-- Figure 10:(Flaticon, 2024)-->
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <img class="footer-image-hover" src="images/instagram.png" style="padding-left: 7px; transition: 0.5s;" height="50px" width="50px" alt="Instagram logo"><!--Figue 11: (Flaticon, 2024)-->
+              </a>
+          </div>
+          <div id="footer-grid-item-7"></div> <!-- To prevent bottom nav overlapping with the footer-->
+        </div>
+    </footer>
+
+    <!-- The IIE (2024), demonstrates how to implement JS scripts -->
+    <script src="js/headerScript.js"></script> <!-- (The IIE, 2024) -->
+
+    <script>
+      // W3Schools (2024), demonstrates how to use the filter attribute
+      homeIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+      sixWeeksIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+      sixMonthsIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+      feesIcon.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%)"; // (css-color-filter-generator, N/A)
+      contactUsIcon.style.filter = "brightness(0) saturate(100%) invert(32%) sepia(13%) saturate(3854%) hue-rotate(118deg) brightness(97%) contrast(87%)"; // (css-color-filter-generator, N/A)
+    </script>
+
+    <script>
+      // The IIE (2024), demonstrates how to check if the input email is valid.
+      let form = document.getElementById("form");
+
+      function validateEmail() {
+          let email = document.getElementById('email').value;
+          let check = /^([a-zA-Z0-9_\,\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+          return check.test(email);
+      }
+
+      form.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          if (validateEmail()) {
+              form.submit();
+          } else {
+              alert("Please Enter A Valid Email.");
+              form.classList.add("invalid");
+              document.getElementById("email").value = "";
+          }
+      })
+    </script>
+  </body>
+</html>
+<!--
+Reference List 
+
+css-color-filter-generator. N/A. [Online]. Available at: https://angel-rs.github.io/css-color-filter-generator/ [Accessed 16 October 2024].
+
+Flaticon . 2024. Facebook free icon, 2024 .[Online]. Available at: https://www.flaticon.com/free-icon/facebook_733547?term=facebook&page=1&position=3&origin=search&related_id=733547 [Accessed 19 August 2024].
+
+Flaticon . 2024. Instagram free icon, 2024. [Online]. Available at: https://www.flaticon.com/free-icon/instagram_2111463?term=instagram&page=1&position=4&origin=search&related_id=2111463 [Accessed 19 August 2024].
+
+Flaticon. 2024. Search Result for Contact - Flaticon. [Online]. Available at: https://www.flaticon.com/free-icon/contact-us_7269995?term=contact&page=1&position=4&origin=search&related_id=7269995 [Accessed 16 October 2024].
+
+Flaticon. 2024. Search Result for Fees - Flaticon. [Online]. Available at: https://www.flaticon.com/search?word=fees&color=black [Accessed 16 October 2024].
+
+Flaticon. 2024. Search Results for Solid Home. [Online]. Available at: https://www.flaticon.com/search?word=solid%20home [Accessed 16 October 2024].
+
+GeeksforGeeks. 2023. How to allow only 10 numbers in a textbox using jQuery ?. [Online]. Available at: https://www.geeksforgeeks.org/allow-only-10-numbers-in-textbox-using-jquery/ [Accessed 24 October 2024].
+
+Google. 2024. 35 Siemert Rd - Google Maps. [Online]. Available at: https://www.google.com/maps/place/35+Siemert+Rd,+Doornfontein,+Johannesburg,+2028/@-26.199002,28.055768,15z/data=!4m6!3m5!1s0x1e950e831cf73645:0x48f68e4d673885ea!8m2!3d-26.1990025!4d28.055768!16s%2Fg%2F11csfm0qz3?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D [Accessed 19 October 2024].
+
+Google. 2024. 179 Jan Smuts Ave - Google Maps. [Online]. Available at: https://www.google.com/maps/place/179+Jan+Smuts+Ave,+Parktown+North,+Randburg,+2193/@-26.147434,28.034505,18z/data=!4m6!3m5!1s0x1e950c8e1700a92d:0x1764719ed5c323e2!8m2!3d-26.1471501!4d28.03487!16s%2Fg%2F11j2ynd0z_?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D [Accessed 19 October 2024].
+
+Google. 2024. 107 Northern Parkway Rd - Google Maps. [Online]. Available at: https://www.google.com/maps/place/107+Northern+Parkway+Rd,+Ormonde,+Johannesburg+South,+2091/@-26.239139,28.006495,13z/data=!4m6!3m5!1s0x1e95093aab452845:0x93a609f531a97e0d!8m2!3d-26.2391386!4d28.0064945!16s%2Fg%2F11c5cx339b?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D [Accessed 19 October 2024].
+
+Melanie Perkins, Cameron Adams, Cliff Obrecht. 2012. Canva. [App]. Available at: https://www.canva.com/ [Accessed 31 July 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+
+HTML & CSS Full Course - Beginner to Pro. 2022. YouTube video, added by SuperSimpleDev. [Online]. Available at: https://www.youtube.com/watch?v=G3e-cpL7ofc [Accessed 2 August 2024].
+
+W3Schools. 2024. CSS filter Property. [Online]. Available at: https://www.w3schools.com/cssref/css3_pr_filter.php [Accessed 16 October 2024].
+
+W3Schools. 2024. How TO - Clickable Dropdown. [Online]. Available at: https://www.w3schools.com/howto/howto_js_dropdown.asp [Accessed 06 October 2024].
+
+W3Schools. 2024. HTML Semantic Elements. [Online]. Available at: https://www.w3schools.com/html/html5_semantic_elements.asp [Accessed 5 October 2024].
+
+-->

@@ -1,0 +1,46 @@
+/* (The IIE, 2024) */
+.nav-container {
+    display: none;
+}
+
+/* The IIE (2024), demonstrates how to implement responsiveness using media query */
+@media only screen and (max-width: 960px) {
+    /* Bottom navigator for when the screen is on mobile view. */
+    .nav-container {
+        display: flex; /* (The IIE, 2024) */
+        flex-direction: row; /* (The IIE, 2024) */
+        justify-content: space-evenly; /* (The IIE, 2024) */
+        text-align: center; /* (The IIE, 2024) */
+        padding: 10px 0px 10px 0px; /* (The IIE, 2024) */
+        background-color: white; /* (The IIE, 2024) */
+        border-top: solid 2px #1A5319; /* (The IIE, 2024) */
+        position: fixed; /* Reference here */
+        bottom: 0; /* Reference here */
+        left: 0; /* Reference here */
+        right: 0; /* Reference here */
+        z-index: 5; /* Reference here */
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; /* (CSS Scan, 2024) */
+    }
+    
+    .nav-btn {
+        width: 40px; /* (The IIE, 2024) */
+        height: 40px; /* (The IIE, 2024) */
+        padding: 0;
+        background-color: white;
+        border: none; /* (The IIE, 2024) */
+    }
+    
+    .nav-text {
+        margin: 0; /* (The IIE, 2024) */
+        font-weight: bolder; /* (The IIE, 2024) */
+        font-size: 13px; /* (The IIE, 2024) */
+    }
+}
+
+/*
+Reference List:
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 06 October 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+*/

@@ -1,0 +1,261 @@
+/* (The IIE, 2024) */
+/* Matthew Sueltz */
+/* CSS-Tricks (2024), demonstrates how to implement grid */
+.main-grid-container {
+  display: grid; /* (CSS-Tricks, 2024) */
+  grid-template-columns: [first] 360px 0.5fr 0.5fr 0.5fr 0.5fr; /* (CSS-Tricks, 2024) */
+  color: white; /* (The IIE, 2024) */
+  padding: 30px 20px 0px 20px; /* (The IIE, 2024) */
+  background-color: #54C392; /* (The IIE, 2024) */
+  border-radius: 30px 30px 0px 0px; /* (The IIE, 2024) */
+}
+
+.main-img-style {
+  object-fit: cover; /* (W3Schools, 2024) */
+  border: solid 2px white; /* (The IIE, 2024) */
+  border-radius: 5px; /* (The IIE, 2024) */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; /* (CSS Scan, 2024) */
+}
+
+.grid-img {
+  grid-column-start: 1; /* (CSS-Tricks, 2024) */
+  grid-column-end: 2; /* (CSS-Tricks, 2024) */
+  grid-row-start: 1; /* (CSS-Tricks, 2024) */
+  grid-row-end: 7; /* (CSS-Tricks, 2024) */
+}
+
+.grid-course-description {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center; /* (The IIE, 2024) */
+  border-right: solid 1px #1A5319; /* (The IIE, 2024) */
+  border-bottom: solid 1px #1A5319; /* (The IIE, 2024) */
+}
+
+.grid-location {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+  border-left: solid 1px #1A5319;
+  border-bottom: solid 1px #1A5319;
+}
+
+.grid-learn-description {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  text-align: center;
+  border-right: solid 1px #1A5319;
+  border-top: solid 1px #1A5319;
+}
+
+.align-descr-li {
+  text-align: left; 
+  margin-bottom: 10px;
+}
+
+.grid-requirement {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  text-align: center;
+  border-left: solid 1px #1A5319;
+  border-top: solid 1px #1A5319;
+}
+
+.grid-fees-apply-back  {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  display: flex; /* (The IIE, 2024) */
+  flex-direction: row; /* (The IIE, 2024) */
+}
+
+.fees-style {
+  width: 50%; /* (The IIE, 2024) */
+  padding-left: 21px; /* (The IIE, 2024) */
+  margin-top: 25px; /* (The IIE, 2024) */
+}
+
+.apply-back-btn-layout {
+  width: 50%;
+  display: flex;
+  justify-content: space-between; /* (The IIE, 2024) */
+  margin-top: 25px;
+}
+
+.apply-back-btn-style{
+  height: 70px; /* (The IIE, 2024) */
+  width: 140px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* (CSS Scan, 2024) */
+  font-size: 28px; /* (The IIE, 2024) */
+  font-family: "Josefin Sans", sans-serif; /* (Google Fonts, 2024) */
+  font-weight: 600; /* (The IIE, 2024) */
+  cursor: pointer; /* (W3Schools, 2024) */
+  margin-top: 20px;
+  transition: 0.5s; /* (W3Schools, 2024) */
+}
+
+.apply-back-btn-style:hover {
+  height: 75px;
+  width: 145px;
+}
+
+
+/* The IIE (2024), demonstrates how to implement responsiveness using media query */
+@media only screen and (max-width: 960px) {
+  .main-grid-container {
+    justify-items: center;
+  }
+
+  .grid-img {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  
+  .grid-course-title {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .grid-course-title-text {
+    margin-bottom: 35px;
+  }
+  
+  .grid-course-description {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    border-right: none;
+    border-bottom: solid 2px #1A5319;
+    margin-top: 50px;
+    padding-bottom: 25px;
+  }
+  
+  .grid-location {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: center;
+    border-left: none;
+    border-bottom: solid 2px #1A5319;
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .grid-learn-description {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    text-align: center;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 2px #1A5319;   
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .align-descr-ul {
+    text-align: center;
+    list-style: inside; /* mdn (2024), demonstrates how to put the bullet symbol inside of the unordered list item */
+    padding-left: 0px;
+  }
+
+  .align-descr-li {
+    text-align: center;
+  }
+  
+  .grid-requirement {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    text-align: center;
+    border-left: none;
+    border-top: none;
+    border-bottom: solid 2px #1A5319;
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .grid-fees-apply-back  {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 13;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .fees-style {
+    width: 100%;
+    padding-left: 0px;
+  }
+  
+  .apply-back-btn-layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .fees-style {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .apply-back-btn-style {
+    margin-top: 0px;
+  }
+
+  .apply-back-btn-style:hover { /* (The IIE, 2024) */
+    height: 70px;
+    width: 140px;
+  }
+}
+
+/*
+Reference List:
+
+CSS-Tricks. 2024. CSS Grid Layout Guide. [Online]. Available at: https://css-tricks.com/snippets/css/complete-guide-grid/ [Accessed 06 October 2024].
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 06 October 2024].
+
+Google Fonts. 2024. [Online]. Available at: https://fonts.google.com/ [Accessed 06 October 2024].
+
+mdn. 2024. list-style. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style [Accessed 07 October 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+
+W3Schools. 2024. CSS cursor Property. [Online]. Available at: https://www.w3schools.com/cssref/pr_class_cursor.php [Accessed 06 October 2024].
+
+W3Schools. 2024. CSS The object-fit Property. [Online]. Available at: https://www.w3schools.com/css/css3_object-fit.asp [Accessed 06 October 2024].
+
+W3Schools. 2024. CSS Transitions. [Online]. Available at: https://www.w3schools.com/css/css3_transitions.asp [Accessed 06 October 2024].
+*/

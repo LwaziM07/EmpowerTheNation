@@ -1,0 +1,71 @@
+/* (The IIE, 2024) */
+/* Matthew Sueltz */
+html {
+  font-family: "Josefin Sans", sans-serif; /* (Google Fonts, 2024) */
+  background-color: #54C392; /* (The IIE, 2024) */
+}
+
+body {
+  /* The code underneath is to make the content fit the whole page from header to footer (see Fit to Page (The Standard, Ep. 2), 2016).*/
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 { /* (The IIE, 2024) */
+  font-size: 32px; /* (The IIE, 2024) */
+}
+
+h2 { /* (The IIE, 2024) */
+  font-size: 28px;
+}
+
+h3 { /* (The IIE, 2024) */
+  font-size: 24px;
+}
+
+p { /* (The IIE, 2024) */
+  font-size: 18px;
+}
+
+li { /* (The IIE, 2024) */
+  font-size: 18px;
+}
+
+label { /* (The IIE, 2024) */
+  font-size: 18px;
+}
+
+.main-layout {
+  margin-bottom: 50px; /* (The IIE, 2024) */
+  padding-top: 50px;  /* (The IIE, 2024) */
+  background-color: #EEEEEE;
+}
+
+.page-title {
+  text-align: center; /* (The IIE, 2024) */
+  color: white; /* (The IIE, 2024) */
+  margin: 0px 20px 50px 20px; /* (The IIE, 2024) */
+  letter-spacing: 5px; /*  */
+  background-color: #117554;
+  padding: 15px 0px 15px 0px; /* (The IIE, 2024) */
+  border: solid 2px #1A5319; /* (The IIE, 2024) */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; /* (CSS Scan, 2024) */
+  border-radius: 20px; /* (The IIE, 2024) */
+}
+
+/*
+Reference List:
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 06 October 2024].
+
+Google Fonts. 2024. [Online]. Available at: https://fonts.google.com/ [Accessed 06 October 2024].
+
+Fit to Page (The Standard, Ep. 2). 2016. YouTube video, added by Chrome for Developers. [Online]. Available at: https://www.youtube.com/watch?v=299RZ0d1LQY [Accessed 20 September 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+
+W3Schools. 2024. CSS letter-spacing Property. [Online]. Available at: https://www.w3schools.com/cssref/pr_text_letter-spacing.php [Accessed 14 October 2024].
+*/

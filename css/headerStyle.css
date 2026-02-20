@@ -1,0 +1,200 @@
+/* (The IIE, 2024) */
+/* Matthew Sueltz */
+.header-container {
+    width: 100%; /* (The IIE, 2024) */
+    display: flex; /* (The IIE, 2024) */
+    border-bottom: solid 2px #117554; /* (The IIE, 2024) */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; /* (CSS Scan, 2024) */
+    background-color: #43a178; /* (The IIE, 2024) */
+}
+  
+.header-img { 
+    width: fit-content; /* (The IIE, 2024) */
+    height: 120px; /* (The IIE, 2024) */
+    margin: 5px; /* (The IIE, 2024) */
+}
+  
+.img-header-radius {
+    border-radius: 20px; /* (The IIE, 2024) */
+}
+  
+.header-links {
+    display: flex;
+    justify-content: space-around; /* (The IIE, 2024) */
+    align-items: center; /* (The IIE, 2024) */
+    width: 100%;
+}
+  
+.menu-responsive {
+    display: none; /* (The IIE, 2024) */
+}
+  
+.header-links-style {
+    width: 200px;
+    height: 70px;
+    background-color: #43a178;
+    border-radius: 20px;
+    text-align: center; /* (The IIE, 2024) */
+    align-content: center; /* (The IIE, 2024) */
+    transition: 0.5s; /* (The IIE, 2024) */
+}
+  
+.header-links-style:hover {
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; /* (CSS Scan, 2024) */
+}
+  
+.header-links-text {
+    font-size: 24px; /* (The IIE, 2024) */
+    font-weight: 600; /* (The IIE, 2024) */
+    border: none;
+    font-family: "Josefin Sans", sans-serif; /* (Google Fonts, 2024) */
+    background-color: #43a178;
+    color: white;
+    width: 150px;
+    cursor: pointer; /* (W3Schools, 2024) */
+}
+  
+.header-links-text:link { /* (The IIE, 2024) */
+    text-decoration: none; /* (The IIE, 2024) */
+    color: black;
+}
+  
+.header-links-text:visited {
+    color: black;
+}
+  
+/* W3Schools (2024), demonstrates how to style a dropdown list */
+.course-btn-style {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #43a178;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    z-index: -1; /* (W3Schools, 2024) */
+    width: 200px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.dropdown-links {
+    height: 50px;
+    border-bottom: solid 1px lightgray;
+}
+
+.showLinks {
+    display: block;
+}
+
+.align-dropdown {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 960px) {   
+    .header-container {
+        height: 130px;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    /* W3Schools (2024), demonstrates how to style a dropdown list */
+    .align-dropdown {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;   
+        z-index: 1;
+        
+    }
+
+    .dropdown-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .drop-btn-responsive {
+        background-color: white;
+        font-weight: bolder;
+        padding: 16px;
+        font-size: 36px;
+        border: none;
+        border-radius: 20px 0px 0px 20px;
+        cursor: pointer;
+    }
+
+    .align-btn {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+
+    .dropdown-content-responsive {
+        display: none;
+        background-color: white;
+        border-radius: 5px 0px 0px 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        z-index: 1;
+    }
+
+    .dropdown-content-responsive a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 21px;
+    }
+
+    .dropdown-links-responsive {
+        align-content: center;
+        height: 50px;
+        border-bottom: solid 1px lightgray;
+    }
+
+    .showLinksResponsive {
+        display: block;
+    }
+}
+
+/*
+Reference List: 
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 20 September 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+
+W3Schools. 2024. CSS cursor Property. [Online]. Available at: https://www.w3schools.com/cssref/pr_class_cursor.php [Accessed 06 October 2024].
+
+W3Schools. 2024. CSS Transitions. [Online]. Available at: https://www.w3schools.com/css/css3_transitions.asp [Accessed 06 October 2024].
+
+W3Schools. 2024. How TO - Clickable Dropdown. [Online]. Available at: https://www.w3schools.com/howto/howto_js_dropdown.asp [Accessed 06 October 2024].
+
+W3Schools. 2024. CSS z-index Property. [Online]. Available at: https://www.w3schools.com/cssref/pr_pos_z-index.php [Accessed 06 October 2024].
+*/

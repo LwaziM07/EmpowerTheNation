@@ -1,0 +1,98 @@
+/*(W3School,2024)*/
+.slides-container {
+    width: 100%; 
+    height: 400px; 
+    overflow: hidden; /* Make sure the information doesn't overflow */
+    position: relative;
+    border-top: solid 2px #1A5319;
+    border-bottom: solid 2px #1A5319;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/*(W3School,2024)*/
+.slides-image {
+    display: none;
+    width: 100%;
+    height: max-content;
+    object-fit: contain; /*(W3School,2024)*/
+}
+
+.discount-container {
+    display: flex; /* (The IIE, 2024) */
+    text-align: center; /* (The IIE, 2024) */
+    padding-top: 60px; /* (The IIE, 2024) */
+    background-color: #54C392; /* (The IIE, 2024) */
+}
+
+.align-disc-ul {
+    text-align: left;
+}
+
+.card-container {
+    background-color: white; /* (The IIE, 2024) */
+    margin: 15px; /* (The IIE, 2024) */
+    padding: 0px 7px 7px 7px; /* (The IIE, 2024) */
+    height: 300px; /* (The IIE, 2024) */
+    border-radius: 10px; /* (The IIE, 2024) */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* (CSS Scan, 2024) */
+    width: 500px
+}
+
+/* The IIE (2024), demonstrates how to implement media query */
+@media screen and (max-width: 1300px) {
+  .card-container {
+    height: 360px;
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 960px) {
+
+  
+    .slides-container { 
+      height: fit-content; 
+    } 
+
+    .discount-container {
+      flex-direction: column; /* (The IIE, 2024) */
+    }
+
+    .align-disc-ul {
+      text-align: center;
+      list-style: inside; 
+      padding-left: 0px; /* mdn (2024), demonstrates how to put the bullet symbol inside of the unordered list item */
+    }
+
+    .align-disc-li {
+      text-align: center;
+    }
+
+    .discount-box {
+      width: 440px;
+      height: 320px;
+      align-self: center; /* (The IIE, 2024) */
+      margin: 0;
+    }
+
+    .card-container {
+      margin: 25px 0px 25px 0px;
+    }
+
+    .comment-box {
+      width: 440px;
+      height: 320px;
+      align-self: center;
+    }
+}
+
+/* 
+Reference List:
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 06 October 2024].
+
+mdn. 2024. list-style. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style [Accessed 16 October 2024].
+
+The IIE. 2024. Web Development (Introduction) [WEDE5020 Module Manual]. The Independent Institute of Education: Unpublished.
+
+W3Schools. 2024. How TO - Slideshow. [Online]. Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp [Accessed 16 October 2024].
+*/

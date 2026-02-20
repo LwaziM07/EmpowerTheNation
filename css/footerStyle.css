@@ -1,0 +1,190 @@
+/* (The IIE, 2024) */
+/* Matthew Sueltz */
+/* To keep the footer at a fixed position at the bottom */
+#footer-container, #footer-container-responsive {
+  width: 100%; /* (The IIE, 2024) */
+  display: flex; /* (The IIE, 2024) */
+  background-color: white; /* (The IIE, 2024) */
+  border-radius: 15px 15px 0px 0px; /* (The IIE, 2024) */
+  margin-top: auto; /* (The IIE, 2024) */
+  font-size: 15px; /* (The IIE, 2024) */
+  font-weight: 600; /* (The IIE, 2024) */
+  bottom: 0; /* (The IIE, 2024) */
+  font-size: 18px; /* (The IIE, 2024) */
+}
+
+#footer-img {
+  width: fit-content;
+  height: fit-content; /* (The IIE, 2024) */
+}
+
+/* CSS-Tricks (2024), demonstrates how to implement grid */
+#footer-grid {
+  display: grid; /* (CSS-Tricks, 2024) */
+  column-gap: 25px; /* (CSS-Tricks, 2024) */
+  width: 100%; /* (CSS-Tricks, 2024) */
+}
+
+#footer-grid-item-1 {
+  grid-column-start: 1; /* (CSS-Tricks, 2024) */
+  grid-column-end: 3; /* (CSS-Tricks, 2024) */
+  grid-row-start: 1; /* (CSS-Tricks, 2024) */
+  grid-row-end: 5; /* (CSS-Tricks, 2024) */
+  padding-top: 20px; /* (The IIE, 2024) */
+  padding-left: 25px; /* (The IIE, 2024) */
+}
+
+#footer-grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  padding-left: 25px;
+}
+
+#footer-grid-item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-top: 20px;
+}
+
+#footer-grid-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+#footer-grid-item-5 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  padding-top: 20px;
+}
+
+#footer-grid-item-6 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  display: flex;
+  align-items: flex-end; /* (The IIE, 2024) */
+  justify-content: space-evenly; /* (The IIE, 2024) */
+  padding-bottom: 6px; /* (The IIE, 2024) */
+}
+
+#footer-grid-item-7 {
+  display: none; /* (The IIE, 2024) */
+}
+
+.footer-link-style:link { /* (The IIE, 2024) */
+  color: #347928; /* (The IIE, 2024) */
+}
+
+.footer-link-style:active { /* (The IIE, 2024) */
+  color: #FFFBE6;
+}
+
+.footer-link-style:visited { /* (The IIE, 2024) */
+  color: #E85C0D;
+}
+
+.footer-link-style:hover { /* (The IIE, 2024) */
+  color: black;
+}
+
+.footer-image-hover:hover {
+  height: 55px;
+  width: 55px;
+}
+
+
+
+/* The IIE (2024), demonstrates how to implement responsiveness using media query */
+@media only screen and (max-width: 960px) {
+  #footer-container {
+    display: none;
+  }
+
+  #footer-img {
+    display: none;
+  }
+
+  #footer-grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center; /* (The IIE, 2024) */
+    padding-top: 20px; /* (The IIE, 2024) */
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+  
+  #footer-grid-item-2 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+    padding-left: 0px;
+  }
+  
+  #footer-grid-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    text-align: center;
+  }
+  
+  #footer-grid-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  #footer-grid-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  #footer-grid-item-6 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+
+  #footer-grid-item-7 {
+    display: block;
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 15;
+  }
+
+  .footer-image-hover:hover {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/*
+Reference List:
+
+CSS-Tricks. 2024. CSS Grid Layout Guide. [Online]. Available at: https://css-tricks.com/snippets/css/complete-guide-grid/ [Accessed 06 October 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+*/

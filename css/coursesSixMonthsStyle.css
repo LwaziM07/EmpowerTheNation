@@ -1,0 +1,111 @@
+ /* (The IIE, 2024) */
+.courses-Parent, .courses-Parent-responsive {
+    display: flex; /* (The IIE, 2024) */
+    justify-content: center; /* (The IIE, 2024) */
+    padding-top: 30px; /* (The IIE, 2024) */
+    align-items: center; /* (The IIE, 2024) */
+    background-color: #54C392; /* (The IIE, 2024) */
+    border-radius: 30px 30px 0px 0px; /* (The IIE, 2024) */
+}
+
+.courses-container {
+    background-color: white; /* (The IIE, 2024) */
+    text-align: center; /* (The IIE, 2024) */
+    width: 600px; /* (The IIE, 2024) */
+    height: 425px; /* (The IIE, 2024) */
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 105px;
+    margin: 20px; /* (The IIE, 2024) */
+    justify-content: center; /* (The IIE, 2024) */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; /* (CSS Scan, 2024) */
+}
+
+.image-Style {
+    height: 350px;
+    width: 600px; 
+}
+
+.course-about {
+    display: flex;
+    justify-self: center;
+    background-color: white; 
+    margin: 0px 0px 50px 0px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* (CSS Scan, 2024) */
+    width: 95%;
+}
+
+.courses-Summary {
+  color: #1A5319; /* (The IIE, 2024) */
+  font-weight: 600; /* (The IIE, 2024) */
+  text-align: center; 
+  font-size: 18px;  /* (The IIE, 2024) */
+  justify-content: center; 
+  margin-left: 5%; 
+  margin-right: 5%;
+}
+
+.courses-btn {
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+}
+
+.courses-btn:hover { /* (The IIE, 2024) */
+    background-color: #54C392;
+    color: white;
+    border-color: #43a178;
+}
+  
+
+    
+/* mobile Style (The IIE, 2024) */
+@media screen and (max-width: 960px ) {
+    .courses-Parent, .courses-Parent-responsive {
+        display: grid; /* (The IIE, 2024) */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courses-Parent-responsive {
+        padding-top: 0px;
+    }
+
+    .courses-container {
+        background-color: white;
+        text-align: center;
+        width: 375px;
+        height: 425px;
+        border-radius: 12px;
+        padding-top: 20px;
+        padding-bottom: 105px;
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .image-Style {
+        height: 350px;
+        width: 375px; 
+    }
+
+    .courses-btn:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+}
+
+/*Reference list:
+
+CSS Scan. 2024. Beautiful CSS box-shadow examples. [Online]. Available at: https://getcssscan.com/css-box-shadow-examples [Accessed 06 October 2024].
+
+The IIE. 2024. HIGHER CERTIFICATE OF MOBILE APPILCATION AND WEB DEVELOPMENT [WEDE5020/d/p/w MODULE MANUAL/GUIDE 2024]. The Independent Institute of Education: Unpublished.
+*/
